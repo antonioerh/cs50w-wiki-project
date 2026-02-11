@@ -3,20 +3,21 @@ from django.http import HttpResponse
 from . import util
 from markdown2 import markdown
 
-
-
 def index(request):
+    '''Display home page'''
+
+    # Return home page
     return render(request, "encyclopedia/index.html", {
         "entries": util.list_entries()
     })
 
-def entry(request, entry):
+def entry(request, title):
     entry_content = None
     entries_list = util.list_entries()
 
-    for i in entries_list:
-        if i.lower() == entry.lower():
-            entry_content = util.get_entry(i)
+    for entry in entries_list:
+        if entry.lower() == title.lower():
+            entry_content = util.get_entry(entry)
 
     if entry_content == None:
         return HttpResponse("Error! Your requested page was not found")
