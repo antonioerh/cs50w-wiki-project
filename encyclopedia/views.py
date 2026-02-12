@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from . import util
 from markdown2 import markdown
@@ -49,9 +49,7 @@ def search(request):
                     "entries": entries_sublist
                 })
 
-        return render(request, "encyclopedia/entry.html", {
-            "entry_content": markdown(entry_content)
-        })  
+        return redirect("entry", title=query)
 
 
 
