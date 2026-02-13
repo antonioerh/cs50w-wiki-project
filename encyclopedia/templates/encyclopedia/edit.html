@@ -7,22 +7,22 @@
 {% block body %}
     <div class="container py-3">
         <div class="col-6 mb-4 mx-auto">
-            <h1>New encyclopedia entry</h1>
+            <h1>Edit encyclopedia entry</h1>
         </div>
         
-        <form action="{% url 'create' %}" method="post">
+        <form action="{% url 'edit' title %}" method="post">
             {% csrf_token %}
             <div class="col-6 mb-3 mx-auto">
                 <label for="exampleFormControlInput1" class="form-label">Title</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" name="createTitle" placeholder="JavaScript">
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="editTitle" placeholder="JavaScript" value="{{ title }}">
             </div>
             <div class="col-6 mb-3 mx-auto">
                 <label for="exampleFormControlTextarea1" class="form-label">Markdown content</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" name="createContent" type="Markdown" rows="5" placeholder="# JavaScript 
-JavaScript is a programming language used for..."></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="editContent" type="Markdown" rows="10" placeholder="# JavaScript 
+JavaScript is a programming language used for...">{{ entry_content }}</textarea>
             </div>
             <div class="col-6 mx-auto">
-                <button class="btn btn-primary" type="submit">Create new</button>
+                <button class="btn btn-primary" type="submit">Edit page</button>
             </div>
         </form>    
     </div>
