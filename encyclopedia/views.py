@@ -20,7 +20,7 @@ def entry(request, title):
     if entry_content == None:
         return HttpResponse("Error! Your requested page was not found")
     return render(request, "encyclopedia/entry.html", {
-        "entry_content": markdown(entry_content)
+        "entry_content": markdown(entry_content), "title": title
     })
 
 def search(request):
