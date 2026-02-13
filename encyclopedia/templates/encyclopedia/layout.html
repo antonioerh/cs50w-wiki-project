@@ -19,15 +19,19 @@
                     <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
                     <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
-                <div class="mb-1 ps-2">
-                    <a href="{% url 'index' %}">Home</a>
-                </div>
-                <div class="mb-1 ps-2">
-                    <a href="{% url 'create' %}">Create New Page</a>
-                </div>
-                <div class="mb-1 ps-2">
-                    <a href="{% url 'random_page' %}">Random Page</a>
-                </div>
+
+                <ul class="nav nav-pills flex-column">
+                    <li class="ps-2 nav-item">
+                        <a class="border-bottom border-secondary-subtle nav-link text-black {% if active_page == 'home' %}bg-dark text-white{% endif %}" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="ps-2 nav-item">
+                        <a class="border-bottom border-secondary-subtle nav-link text-black {% if active_page == 'create' %}bg-dark text-white{% endif %}" href="{% url 'create' %}">Create New Page</a>
+                    </li>
+                    <li class="ps-2 nav-item">
+                        <a class="nav-link text-black" href="{% url 'random_page' %}">Random Page</a>
+                    </li>    
+                </ul>
+
                 {% block nav %}
                 {% endblock %}
             </div>

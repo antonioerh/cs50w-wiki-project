@@ -6,7 +6,7 @@ import random
 
 def index(request):
     return render(request, "encyclopedia/index.html", {
-        "entries": util.list_entries()
+        "entries": util.list_entries(), "active_page": 'home'
     })
 
 def entry(request, title):
@@ -51,7 +51,9 @@ def search(request):
 
 def create(request):
     if request.method == "GET":
-        return render(request, "encyclopedia/create.html")
+        return render(request, "encyclopedia/create.html", {
+            "active_page": 'create'
+        })
     else:
         title = request.POST.get("createTitle")
         content = request.POST.get("createContent")
