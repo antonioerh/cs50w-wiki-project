@@ -4,8 +4,6 @@ from . import util
 from markdown2 import markdown
 
 def index(request):
-    '''Display home page'''
-
     # Return home page
     return render(request, "encyclopedia/index.html", {
         "entries": util.list_entries()
@@ -51,5 +49,15 @@ def search(request):
 
         return redirect("entry", title=query)
 
+def create(request):
+    if request.method == "GET":
+        return render(request, "encyclopedia/create.html")
+    else:
+        title = request.POST.get("createTitle")
+        content = request.POST.get("createContent")
 
-
+        if title in util.list_entries():
+            return HttpResponse("Error! Entry title already exists")
+        else:
+            util.save_entry(title, content)
+            return redirect("entry", title=title)

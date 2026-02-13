@@ -1,0 +1,30 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <div class="container py-3">
+        <div class="col-6 mb-4 mx-auto">
+            <h1>New encyclopedia entry</h1>
+        </div>
+        
+        <form action="{% url 'create' %}" method="post">
+            {% csrf_token %}
+            <div class="col-6 mb-3 mx-auto">
+                <label for="exampleFormControlInput1" class="form-label">Title</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="createTitle" placeholder="JavaScript">
+            </div>
+            <div class="col-6 mb-3 mx-auto">
+                <label for="exampleFormControlTextarea1" class="form-label">Markdown content</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="createContent" type="Markdown" rows="5" placeholder="# JavaScript 
+JavaScript is a programming language used for..."></textarea>
+            </div>
+            <div class="col-6 mx-auto">
+                <button class="btn btn-primary" type="submit">Create new</button>
+            </div>
+        </form>    
+    </div>
+    
+{% endblock %}
