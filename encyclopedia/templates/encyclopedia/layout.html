@@ -13,20 +13,20 @@
     <body>
         <div class="row">
             <div class="sidebar col-lg-2 col-md-3">
-                <h2>Wiki</h2>
-                <form action="{% url 'search' %}" class="d-flex" method="post">
+                <h2 class="mb-3 ps-2"><a style="text-decoration: none; color: black;" href="{% url 'index' %}">Wiki</a></h2>
+                <form action="{% url 'search' %}" class="d-flex mb-3 ps-2" method="post">
                     {% csrf_token %}
                     <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
                     <button type="submit"><i class="bi bi-search"></i></button>
                 </form>
-                <div>
+                <div class="mb-1 ps-2">
                     <a href="{% url 'index' %}">Home</a>
                 </div>
-                <div>
+                <div class="mb-1 ps-2">
                     <a href="{% url 'create' %}">Create New Page</a>
                 </div>
-                <div>
-                    Random Page
+                <div class="mb-1 ps-2">
+                    <a href="{% url 'random_page' %}">Random Page</a>
                 </div>
                 {% block nav %}
                 {% endblock %}
