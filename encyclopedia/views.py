@@ -42,7 +42,7 @@ def search(request):
             for entry in entries_list:
                 if query.lower() in entry.lower():
                     entries_sublist.append(entry)
-            if entries_sublist == None:
+            if entries_sublist == []:
                 return HttpResponse("Error! Your requested page was not found")
             else:
                 return render(request, "encyclopedia/sublist.html", {
