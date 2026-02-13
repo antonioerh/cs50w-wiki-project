@@ -5,11 +5,13 @@ from markdown2 import markdown
 import random
 
 def index(request):
+    # Render home page
     return render(request, "encyclopedia/index.html", {
         "entries": util.list_entries(), "active_page": 'home'
     })
 
 def entry(request, title):
+    # 
     entry_content = None
     entries_list = util.list_entries()
 
