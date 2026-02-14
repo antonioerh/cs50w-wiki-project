@@ -23,6 +23,11 @@ This project is a wiki-style web application that allows users to create, edit, 
 - Edit existing entries  
 - Access a random encyclopedia entry
 
+## Dependencies
+
+- Django — backend web framework
+- markdown2 — used to convert Markdown content into HTML
+
 ## How to Run
 
 1. Make sure you have Python 3 installed.
