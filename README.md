@@ -14,3 +14,27 @@ This project is a wiki-style web application that allows users to create, edit, 
 - ![CSS](https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white)
 - ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 
+## Features
+
+- View encyclopedia entries rendered dynamically as HTML
+- Browse a list of all available pages
+- Search for entries by title or substring
+- Create new entries written in Markdown   
+- Edit existing entries  
+- Access a random encyclopedia entry
+
+## How to Run
+
+1. Make sure you have Python 3 installed.
+2. Install Django if it is not already installed:
+   ```bash
+   pip install django
+   ```
+3. Navigate to the project directory
+4. Run the development server
+5. Open your browser and go to
+   ```
+   http://127.0.0.1:8000/
+   ```
+
+
