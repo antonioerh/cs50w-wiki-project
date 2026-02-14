@@ -1,6 +1,6 @@
-# Wiki
+# Wiki (Project 1) — CS50W
 
-A Wikipedia-like online encyclopedia for [CS50W: Web Programming with Python and JavaScript](https://www.edx.org/learn/web-development/harvard-university-cs50-s-web-programming-with-python-and-javascript#ace-recommendation-card-component)'s project 1
+A Wikipedia-like online encyclopedia for [CS50W: Web Programming with Python and JavaScript](https://www.edx.org/learn/web-development/harvard-university-cs50-s-web-programming-with-python-and-javascript#ace-recommendation-card-component)
 
 ## Description
 
