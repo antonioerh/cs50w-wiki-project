@@ -1,3 +1,5 @@
 venv/
-__pycache__/
+wiki/__pycache__/
+encyclopedia/__pycache__/
+encyclopedia/migrations/__pycache__/
 db.sqlite3
