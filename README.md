@@ -30,17 +30,9 @@ This project is a wiki-style web application that allows users to create, edit, 
 2. Clone this repository and navigate into the project directory.
 
 3. Create and activate a virtual environment:
-
-   On macOS / Linux:
    ```bash
    python3 -m venv venv
    source venv/bin/activate
-   ```
-
-   On Windows:
-   ```powershell
-   python -m venv venv
-   venv\Scripts\activate
    ```
 
 4. Install dependencies:
@@ -54,7 +46,7 @@ This project is a wiki-style web application that allows users to create, edit, 
    ```
    
 6. Open your browser and go to:
-   ```bash
+   ```
    http://127.0.0.1:8000/
    ```
 
