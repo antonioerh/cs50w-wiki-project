@@ -27,17 +27,34 @@ This project is a wiki-style web application that allows users to create, edit, 
 
 1. Make sure you have Python 3 installed.
 
-2. Install Django if it is not already installed:
+2. Clone this repository and navigate into the project directory.
+
+3. Create and activate a virtual environment:
+
+   On macOS / Linux:
    ```bash
-   pip install django
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+   On Windows:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
+
+4. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
    ```
    
-3. Navigate to the project directory
-
-4. Run the development server
-
-5. Open your browser and go to
+5. Run the development server:
+   ```bash
+   python manage.py runserver
    ```
+   
+6. Open your browser and go to:
+   ```bash
    http://127.0.0.1:8000/
    ```
 
