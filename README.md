@@ -29,6 +29,7 @@ This project is a wiki-style web application that allows users to create, edit, 
 - markdown2 — used to convert Markdown content into HTML
 
 ## How to Run
+> The following commands assume a Unix-like environment (Bash).
 
 1. Make sure you have Python 3 installed.
 
