@@ -26,12 +26,16 @@ This project is a wiki-style web application that allows users to create, edit, 
 ## How to Run
 
 1. Make sure you have Python 3 installed.
+
 2. Install Django if it is not already installed:
    ```bash
    pip install django
    ```
+   
 3. Navigate to the project directory
+
 4. Run the development server
+
 5. Open your browser and go to
    ```
    http://127.0.0.1:8000/
