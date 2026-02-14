@@ -42,7 +42,7 @@ This project is a wiki-style web application that allows users to create, edit, 
    
 5. Run the development server:
    ```bash
-   python manage.py runserver
+   python3 manage.py runserver
    ```
    
 6. Open your browser and go to:
