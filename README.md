@@ -38,7 +38,7 @@ This project is a wiki-style web application that allows users to create, edit, 
    ```
 
    On Windows:
-   ```bash
+   ```powershell
    python -m venv venv
    venv\Scripts\activate
    ```
