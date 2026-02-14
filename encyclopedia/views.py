@@ -97,7 +97,7 @@ def edit(request, title):
         content = request.POST.get("editContent")
 
         # Check if entry title has changed
-        if form_title != title:
+        if form_title.lower() != title.lower():
             return HttpResponse("Error! Cannot change entry name")
         else:
             # Save new entry to the database and redirect to the new entry page
