@@ -1,5 +1,5 @@
 # Wiki (Project 1) — CS50W
-A Wikipedia-like online encyclopedia for [CS50W: Web Programming with Python and JavaScript](https://www.edx.org/learn/web-development/harvard-university-cs50-s-web-programming-with-python-and-javascript#ace-recommendation-card-component)
+A Wikipedia-like online encyclopedia I developed for [CS50W: Web Programming with Python and JavaScript](https://www.edx.org/learn/web-development/harvard-university-cs50-s-web-programming-with-python-and-javascript#ace-recommendation-card-component)
 
 ## Description
 This project is a wiki-style web application that allows users to create, edit, search, and view encyclopedia entries written in Markdown. Entries are rendered dynamically into HTML, and users can browse all pages or search for specific content. The application was developed as part of CS50W to practice Django-based web development and core web programming concepts.
